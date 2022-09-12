@@ -1,0 +1,18 @@
+<!-- templates/about/author.html -->
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Об авторе проекта{% endblock %}
+{% block content %}
+  <div class="container col-lg-9 col-sm-12">
+  <h4>Привет, я Полина Горшкова и я начинающий разработчик</h4>
+  <img src="{% static 'img/cat_pr.png' %}" width="30%" height="30%">
+
+
+  <p>
+    Пока что это мой первый сайт и я надеюсь не последний...
+  </p>
+  <p>
+      Я только учусь и думаю у меня все получится. Мир IT очень интересный и многообразный и рада стать его частью!
+  </p>
+  </div>
+{% endblock %}
