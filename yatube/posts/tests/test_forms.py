@@ -3,7 +3,7 @@ from django.urls import reverse
 from django.test import Client, TestCase
 from http import HTTPStatus
 
-from posts.models import Post,Group
+from posts.models import Post, Group
 
 
 User = get_user_model()
@@ -66,7 +66,7 @@ class PostFormTest(TestCase):
         self.assertEqual(post.text, 'Test post')
         self.assertEqual(post.author, self.user)
         self.assertEqual(post.group, PostFormTest.group)
-        self.assertEqual(Post.objects.count(), 2) 
+        self.assertEqual(Post.objects.count(), 2)
 
     def test_edit_post_changed_with_same_id(self):
         post_id = self.post_to_be_changed.pk
